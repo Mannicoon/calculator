@@ -28,6 +28,34 @@ buttons.forEach(button => {
                     input.value += button.innerText;
                 }
                 break;
+
+            case '-':
+                if(input.value != '' && input.value.charAt(input.value.length -1) != '-'){
+                    console.log("Sa lahutad oma arve!");
+                    input.value += button.innerText;
+                }
+                break;
+
+                case '*':
+                    if(input.value != '' && input.value.charAt(input.value.length -1) != '*'){
+                        console.log("Sa korrutad oma arve!");
+                        input.value += button.innerText;
+                    }
+                    break;
+
+                case '/':
+                    if(input.value != '' && input.value.charAt(input.value.length -1) != '/'){
+                        console.log("Sa jagad oma arve!");
+                        input.value += button.innerText;
+                    }
+                    break;
+
+                case '𝜋':
+                    if(input.value != '' && input.value.charAt(input.value.length -1) != '𝜋'){
+                        console.log("Sa kasutasid pi ( 𝜋 ) funktsiooni!");
+                        input.value += button.innerText;
+                    }
+                     break;
         
             default:
                 input.value += button.innerText;
